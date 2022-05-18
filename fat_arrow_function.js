@@ -49,9 +49,8 @@ const thanks = document.querySelector(".thanks");
 //Arrow function in normal function 
 function show() {
     display.innerHTML = this.value;
-    var self = this;
     setTimeout(() => {
-        thanks.innerHTML = `You have typed: ${self.value}`;
+        thanks.innerHTML = `You have typed: ${this.value}`;
     }, 1000);
 };
 searchInput.addEventListener("keyup", show);
