@@ -26,7 +26,12 @@ const [,, [, x,,],y] = numbers;
 
 // example of swap values
 export var j = 1;
-export var r = 2;
-
+var r = 2;
+export default r;
  [r, j] = [j, r];
-console.log(j, r)
+// console.log(j, r)
+
+// function export 
+export function my() {
+    console.log("im func");
+}
