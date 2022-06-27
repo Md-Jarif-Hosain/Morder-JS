@@ -19,7 +19,8 @@ for (let values of set2) {
 
 // usage of Set
 let newArray = ["Jarif", "rafi", "sifat", 'rony', "Jarif", "Jarif", "Jarif", 1, 1, 1, 4, 4, 4, 4,];
-function duplicateRemover(arr) {
+
+export function duplicateRemover(arr) {
     return [...new Set(arr)];
 };
 // log(duplicateRemover(newArray));
@@ -46,7 +47,7 @@ let difference = new Set([...a].filter(x => !b.has(x)));
 // ******************** WeakSet ************************
 
 const ws = new WeakSet([{ a: 1 }, { b: 2 }]); //element can be Object only, and it's not iterable.
-log(ws);
+// log(ws);
 
 // usage of weakSet 
 const ws2 = new WeakSet();
@@ -63,6 +64,6 @@ class SomeClass {
     }
 }
 const j = new SomeClass();
-log(j.method())//traditional way
+// log(j.method())//traditional way
 
-// log(SomeClass.prototype.method());//use prototype tp access method of a Class.
+log(SomeClass.prototype.method());//use prototype to access method of a Class.

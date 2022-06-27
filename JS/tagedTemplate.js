@@ -1,4 +1,4 @@
-function modifier(strings, ...values) {
+export function modifier(strings, ...values) {
     const m = strings.reduce((prev, current) => {
         return prev + current + (values.length ? "Mr " + values.shift() : "")
     }, "")
